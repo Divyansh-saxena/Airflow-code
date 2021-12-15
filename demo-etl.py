@@ -37,6 +37,6 @@ with dag:
     stage3 = S3CreateBucketOperator(
             task_id='s3_bucket_dag_create',
             bucket_name="awsedrgt1234098"
-            region_name='us-west-2')
+            )
 
-        stage1 >> stage2 >> stage3
+    stage1 >> stage2 >> stage3
